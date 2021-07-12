@@ -1,7 +1,11 @@
-/**
-  * Measure the elapsed time between start and end time
-  * importing java packages for rounding and get two decimal point afer point
-  */
+/***********************************************************************************************************************************************************************
+  **************************************************** Measure the elapsed time between start and end time *************************************************************
+  ***************************************** importing java packages for rounding and get two decimal point afer point **************************************************
+  *
+  * @author Immanuvel Jeeva
+  * @Since  12-07-2021
+  *
+  **********************************************************************************************************************************************************************/
 
 import java.text.DecimalFormat;
 import java.math.RoundingMode;

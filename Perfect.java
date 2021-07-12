@@ -1,7 +1,11 @@
-/**
-  * check whether perfect number or not
-  * The perfect number is equal to the sum of its positive divisors excluding the number   
-  */
+/***********************************************************************************************************************************************************************
+  ****************************************************** Check whether perfect number or not ***************************************************************************
+  ****************************** The perfect number is equal to the sum of its positive divisors excluding the number **************************************************
+  *
+  * @author Immanuvel Jeeva
+  * @Since  12-07-2021
+  *
+  **********************************************************************************************************************************************************************/
 
 import java.util.*;
 public class Perfect  {

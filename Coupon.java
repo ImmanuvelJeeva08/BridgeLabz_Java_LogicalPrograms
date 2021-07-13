@@ -1,3 +1,11 @@
+/************************************************************************************************************************************************************************
+ *************************************************************** To generate N distinct coupon Number *******************************************************************
+ *
+ * @author Immanuvel Jeeva
+ * @Since  13-07-2021
+ *
+ ***********************************************************************************************************************************************************************/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
@@ -32,7 +40,8 @@ public class Coupon {
 
     //main method
     public static void main(String[] args) {
-
+        
+        // Get the input from the user
         System.out.println("Enter the number of coupons you want to generate: ");
         Scanner sc = new Scanner(System.in);
 

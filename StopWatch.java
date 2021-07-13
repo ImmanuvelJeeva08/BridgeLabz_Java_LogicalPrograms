@@ -3,56 +3,36 @@
   * importing java packages for rounding and get two decimal point afer point
   */
 
-import java.text.DecimalFormat;
-import java.math.RoundingMode;
 import java.util.*;
 public class StopWatch  {
-
-	// use elapsedtime method for find elapsed time in hours and minutes
-
-	static void elapsedtime(double full) {
-
-        // difference between start and end time is multiply by 10
-
-        double round=full*10;
-        double remainder=60;
-
-        while (round >= 60) {
-                round = round % 60;
-                remainder=round / 60;
-        }
-        System.out.println(round+" hours");
-        System.out.println(remainder+" minutes");
-
-        }
-
 
 	public static void main(String[] args) {
 
 	Scanner sc=new Scanner(System.in);
 
-	// get two decimal point after point
+	System.out.println("Type 'start' to start the stopWatch");
+	String srt = sc.next();
 
-	DecimalFormat df=new DecimalFormat(".##");
+	long start = System.currentTimeMillis();
+	System.out.println(start);
+	if(srt.equals("start")) {
+		
+		System.out.println("Type 'stop' to stop the stopWatch");
+		String stp = sc.next();
 
-	// get start and end time from user
+		while(!stp.equals("stop")) {
 
-	System.out.println("Enter the Starting time");
-	double start=sc.nextDouble();
-
-	System.out.println("Enter the Ending time");
-        double end=sc.nextDouble();
-
-	double diff=Math.abs(start-end);
-	
-	df.setRoundingMode(RoundingMode.DOWN);
-
-        String full=df.format(diff);
-        System.out.println(full);
-
-	// function calling
-
-	elapsedtime(full);
-
+			System.out.println("Type 'stop' to stop the stopWatch");
+			stp = sc.next();
+		}
+		long stop = System.currentTimeMillis();
+		long time = stop - start;
+		System.out.println("Elapsed Time in ms = "+time);
+		System.out.println("Elapsed Time in sec = "+time/1000);
 	}
+	else {
+		System.out.println("Wrong Input");
+	}
+	}
+	
 }
